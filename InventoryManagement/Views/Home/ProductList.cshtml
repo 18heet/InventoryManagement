@@ -1,0 +1,22 @@
+﻿@using InventoryManagement.Entities.Data_Models
+@model List<Product>
+<div class="contianer">
+    <div class="d-flex justify-content-end">
+        <a class="btn border border-success rounded-pill" asp-action="ProductForm" asp-controller="Home">Add Product</a>
+    </div>
+    <table class="table">
+        <tr>
+            <th>Product Name</th>
+            <th>Product Status</th>
+            <th>Variants</th>
+        </tr>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.ProductName</td>
+                <td>@item.ProductStatus</td>
+                <td><a class="btn border border-success" asp-action="GetProductVariants" asp-controller="Home" asp-route-id ="@item.ProductId">Variants</a></td>
+            </tr>
+        }
+    </table>
+</div>

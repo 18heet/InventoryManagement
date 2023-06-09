@@ -1,0 +1,20 @@
+﻿@using InventoryManagement.Entities.Data_Models
+@model List<Vendor>
+<div class="contianer">
+    <div class="d-flex justify-content-end">
+        <a class="btn border border-success rounded-pill" asp-action="UserForm" asp-controller="Home">Add Vendor</a>
+    </div>
+    <table class="table">
+        <tr>
+            <th>Vendor Name</th>
+            <th>Contact Number</th>
+        </tr>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.VedorName</td>
+                <td>@item.ContactNumber</td>
+            </tr>
+        }
+    </table>
+</div>

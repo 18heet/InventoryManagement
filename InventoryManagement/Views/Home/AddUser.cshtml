@@ -1,0 +1,14 @@
+﻿@model InventoryManagement.Entities.View_Models.UserVM
+<div class="container">
+    <form method="post" asp-action="UserFormPost" asp-controller="Home">
+        <select asp-for="userStatus" class="form-select">
+                <option value="0">Vendor</option>
+                <option value="1">Customer</option>
+        </select>
+
+        <input type="text" class="form-control" asp-for="UserName" required />
+        <input type="text" class="form-control" asp-for="ContactNumber" required />
+
+        <button type="submit" class="btn border border-dark">Submit</button>
+    </form>
+</div>

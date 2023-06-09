@@ -1,0 +1,31 @@
+﻿@using InventoryManagement.Entities.Data_Models
+@using InventoryManagement.Entities.View_Models
+@model Tuple<List<Customer>, List<ProductVariantVM> , OrderVM>
+
+<div class="container">
+    <form method="post" asp-action="OrderPost" asp-controller="Home">
+        <label>Customer</label>
+        <select asp-for="Item3.CustomerId">
+            @foreach(var item in Model.Item1)
+            {
+                <option value="@item.CustomerId">@item.CustomerName</option>
+            }
+        </select>
+        <br />
+        <br />
+        <label>Products</label>
+        <select asp-for="Item3.ProductVariantId">
+            @foreach(var item in Model.Item2)
+            {
+                <option value="@item.ProductVariantId">@item.ProductName - @item.MeasurementAmount @item.measurementType</option>
+            }
+        </select>
+        <br />
+        <br />
+        <label>Total Cost</label>
+        <input type="number" asp-for="Item3.Total" />
+
+        <input type="number" asp-for="Item3.PurchasedUnits" max="" />
+        <button class="btn rounded-pill border border-dark">Submit</button>
+    </form>
+</div>

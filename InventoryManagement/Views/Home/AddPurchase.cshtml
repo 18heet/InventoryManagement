@@ -1,0 +1,33 @@
+﻿@using InventoryManagement.Entities.View_Models
+@model PurchaseVM
+<div class="container">
+    <form method="post" asp-action="addPurchasePost" asp-controller="Home">
+        <label>Vendor</label>
+        <select asp-for="VendorId">
+            @foreach(var item in Model.vendors)
+            {
+                <option value="@item.VendorId">@item.VedorName</option>
+            }
+        </select>
+        <br />
+        <br />
+        <label>Product</label>
+        <select asp-for="ProductVariantId">
+            @foreach(var item in Model.products)
+            {
+                <option value="@item.ProductVariantId">@item.ProductName @item.MeasurementAmount@item.measurementType</option>
+            }
+        </select>
+        <br />
+        <br />
+        <label>Units you want to buy</label>
+        <input type = "number" asp-for="Units" />
+        <br />
+        <br />
+        <label>Purchase Cost(Per Unit)</label>
+        <input type="number" asp-for="PurchaseCost" />
+        <br />
+        <br />
+        <button type="submit" class="btn border border-dark rounded-pill">Submit</button>
+    </form>
+</div>

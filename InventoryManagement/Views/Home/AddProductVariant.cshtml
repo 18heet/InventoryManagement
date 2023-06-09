@@ -1,0 +1,40 @@
+﻿@using InventoryManagement.Entities.Constants
+@using InventoryManagement.Entities.View_Models
+@model ProductVariantVM
+<div class="container">
+    <form method="post" asp-action="ProductVariantPost" asp-controller="Home">
+        <label>Product Name</label>
+        <select class="form-select" asp-for="ProductID">
+            @foreach (var item in Model.products)
+            {
+                <option value="@item.ProductId">@item.ProductName</option>
+            }
+        </select>
+        <br />
+        <label>Unit</label>
+        <select class="form-select" asp-for="measurementType">
+            <option value="@MeasurementType.Unit">@MeasurementType.Unit</option>
+            <option value="@MeasurementType.Grams">@MeasurementType.Grams</option>
+            <option value="@MeasurementType.Kg">@MeasurementType.Kg</option>
+            <option value="@MeasurementType.Litre">@MeasurementType.Litre</option>
+            <option value="@MeasurementType.ml">@MeasurementType.ml</option>
+        </select>
+        <br />
+        <br />
+        <label>Measurement Amount</label>
+        <input type="number" asp-for="MeasurementAmount" />
+        <br />
+        <br />
+        <label>Purchase Cost</label>
+        <input type="number" asp-for="PurchaseCost" />
+        <br />
+        <br />
+        <label>Variant Status</label>
+        <select class="form-select" asp-for="status">
+            <option value="@ProductStatus.Active">Active</option>
+            <option value="@ProductStatus.InActive">InActive</option>
+        </select>
+
+        <button type="submit" class="btn border border-dark rounded-pill">Submit</button>
+    </form>
+</div>

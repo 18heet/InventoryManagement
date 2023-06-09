@@ -1,0 +1,33 @@
+﻿@using InventoryManagement.Entities.View_Models
+@model List<PurchaseVM>
+<div class="contianer">
+    <div class="d-flex justify-content-end">
+        <a class="btn border border-success rounded-pill" asp-action="addPurchase" asp-controller="Home">Add Purchase</a>
+    </div>
+    <table class="table">
+        <tr>
+            <th>Product Name</th>
+            <th>Measurement Amount</th>
+            <th>Units</th>
+            <th>Vendor Name</th>
+            <th>Purchase Cost</th>
+            <th></th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ProductName</td>
+                <td>@item.MeasurementAmount @item.measurementType</td>
+                <td>@item.Units</td>
+                <td>@item.VendorName</td>
+                <td>@item.PurchaseCost</td>
+                <td>
+                    @if (@item.Stock >= @item.Units)
+                    {
+                        <a class="btn border border-danger" asp-action="ReturnPurchase" asp-controller="Home" asp-route-productVarientId="@item.ProductVariantId" asp-route-purchaseId="@item.PurchaseId" asp-route-purchasedUnits = "@item.Units">Return</a>
+                    }
+                </td>
+            </tr>
+        }
+    </table>
+</div>

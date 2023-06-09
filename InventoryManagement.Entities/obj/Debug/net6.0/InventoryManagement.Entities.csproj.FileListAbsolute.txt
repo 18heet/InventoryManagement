@@ -1,0 +1,14 @@
+C:\Users\pct23\Identity\InventoryManagement\InventoryManagement.Entities\bin\Debug\net6.0\InventoryManagement.Entities.deps.json
+C:\Users\pct23\Identity\InventoryManagement\InventoryManagement.Entities\bin\Debug\net6.0\InventoryManagement.Entities.dll
+C:\Users\pct23\Identity\InventoryManagement\InventoryManagement.Entities\bin\Debug\net6.0\ref\InventoryManagement.Entities.dll
+C:\Users\pct23\Identity\InventoryManagement\InventoryManagement.Entities\bin\Debug\net6.0\InventoryManagement.Entities.pdb
+C:\Users\pct23\Identity\InventoryManagement\InventoryManagement.Entities\obj\Debug\net6.0\InventoryManagement.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pct23\Identity\InventoryManagement\InventoryManagement.Entities\obj\Debug\net6.0\InventoryManagement.Entities.AssemblyInfoInputs.cache
+C:\Users\pct23\Identity\InventoryManagement\InventoryManagement.Entities\obj\Debug\net6.0\InventoryManagement.Entities.AssemblyInfo.cs
+C:\Users\pct23\Identity\InventoryManagement\InventoryManagement.Entities\obj\Debug\net6.0\InventoryManagement.Entities.csproj.CoreCompileInputs.cache
+C:\Users\pct23\Identity\InventoryManagement\InventoryManagement.Entities\obj\Debug\net6.0\InventoryManagement.Entities.dll
+C:\Users\pct23\Identity\InventoryManagement\InventoryManagement.Entities\obj\Debug\net6.0\ref\InventoryManagement.Entities.dll
+C:\Users\pct23\Identity\InventoryManagement\InventoryManagement.Entities\obj\Debug\net6.0\InventoryManagement.Entities.pdb
+C:\Users\pct23\Identity\InventoryManagement\InventoryManagement.Entities\bin\Debug\net6.0\InventoryManagement.Entities.runtimeconfig.json
+C:\Users\pct23\Identity\InventoryManagement\InventoryManagement.Entities\obj\Debug\net6.0\InventoryManagement.Entities.genruntimeconfig.cache
+C:\Users\pct23\Identity\InventoryManagement\InventoryManagement.Entities\obj\Debug\net6.0\InventoryManagement.Entities.csproj.AssemblyReference.cache

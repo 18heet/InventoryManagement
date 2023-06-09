@@ -1,0 +1,11 @@
+﻿@model InventoryManagement.Entities.View_Models.ProductVm
+<div class="container">
+    <form method="post" asp-action="ProductPost" asp-controller="Home">
+        <input type="text" class="form-control" asp-for="ProductName" required />
+        <select asp-for="ProductStatus" class="form-select">
+                <option value="0">InActive</option>
+                <option value="1">Active</option>
+        </select>
+        <button type="submit" class="btn border border-dark">Submit</button>
+    </form>
+</div>

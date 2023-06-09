@@ -1,0 +1,26 @@
+﻿@using InventoryManagement.Entities.View_Models
+@model List<ProductVariantVM>
+<div class="contianer">
+    <div class="d-flex justify-content-end">
+        <a class="btn border border-success rounded-pill" asp-action="ProductVariantForm" asp-controller="Home">Add Product Variant</a>
+    </div>
+    <table class="table">
+        <tr>
+            <th>Product Name</th>
+            <th>Measurement Unit</th>
+            <th>Measurement Amount</th>
+            <th>Stock</th>
+            <th>Status</th>
+        </tr>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.ProductName</td>
+                <td>@item.measurementType</td>
+                <td>@item.MeasurementAmount</td>
+                <td>@item.Stock</td>
+                <td>@item.status</td>
+            </tr>
+        }
+    </table>
+</div>
